@@ -22,5 +22,6 @@ SQL Injection testée avec : 1 (dans <img width="1492" height="847" alt="image" 
 
 Résultat :
 
-Accès aux données utilisateurs
-Contournement de la logique de la requête
+*Accès aux données utilisateurs
+
+*Contournement de la logique de la requête
