@@ -9,6 +9,8 @@ services:
       MYSQL_PASSWORD: dvwa
     expose:
       - "3306"
+    networks:
+      - dvwa-network
 
   dvwa:
     image: vulnerables/web-dvwa
@@ -22,3 +24,9 @@ services:
       MYSQL_DATABASE: dvwa
       MYSQL_USER: dvwa
       MYSQL_PASSWORD: dvwa
+    networks:
+      - dvwa-network
+
+networks:
+  dvwa-network:
+    driver: bridge
