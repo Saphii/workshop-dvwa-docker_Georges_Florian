@@ -19,3 +19,8 @@ DVWA non exposé directement
 Partie 4 – Test de vulnérabilité
 
 SQL Injection testée avec : 1 (dans <img width="1492" height="847" alt="image" src="https://github.com/user-attachments/assets/98ece23a-480d-4985-bcc7-ad52ca569f89" />
+
+Résultat :
+
+Accès aux données utilisateurs
+Contournement de la logique de la requête
