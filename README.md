@@ -1,6 +1,9 @@
 # workshop-dvwa-docker_Georges_Florian
 Saphii : Florian Georges
 
+Schéma projet : 
+<img width="1536" height="1024" alt="SchémaTP_docker" src="https://github.com/user-attachments/assets/ce853a18-c3b3-447d-ab91-c8557765f07b" />
+
 
 Partie 1 – Déploiement
 Mise en place de DVWA + MySQL avec Docker Compose
@@ -63,5 +66,5 @@ C’est pourquoi la base `dvwa` visible dans phpMyAdmin peut rester vide, même 
 Ce comportement montre l’importance de bien configurer et vérifier les variables de connexion entre les services dans une architecture Docker.
 
 
-<img width="1536" height="1024" alt="SchémaTP_docker" src="https://github.com/user-attachments/assets/ce853a18-c3b3-447d-ab91-c8557765f07b" />
+
 
