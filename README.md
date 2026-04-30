@@ -25,3 +25,25 @@ Résultat :
 *Accès aux données utilisateurs
 
 *Contournement de la logique de la requête
+
+
+QUESTIONS : 
+
+1-Pourquoi cette attaque fonctionne ?
+
+Cette attaque fonctionne car l’application ne filtre pas les entrées utilisateur.
+La valeur saisie est directement injectée dans la requête SQL, ce qui permet de modifier sa logique.
+Ici, la condition '1'='1' est toujours vraie, donc la base de données retourne tous les résultats.
+
+2-Quel est le rôle de la base de données dans cette faille ?
+
+La base de données exécute la requête SQL telle qu’elle est reçue.
+Elle ne vérifie pas si la requête est légitime, elle se contente de l’exécuter.
+Dans ce cas, elle retourne des données sensibles (utilisateurs) à cause de la requête modifiée.
+
+3-Docker protège-t-il contre ce type de vulnérabilité ?
+
+Non, Docker ne protège pas contre les vulnérabilités applicatives.
+Docker isole les services et sécurise l’infrastructure, mais ne corrige pas les failles dans le code.
+Une application vulnérable reste exploitable même dans un conteneur Docker.
+
