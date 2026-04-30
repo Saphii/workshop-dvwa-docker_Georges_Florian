@@ -61,3 +61,7 @@ Cela signifie que DVWA peut utiliser sa propre base interne au lieu de celle du 
 C’est pourquoi la base `dvwa` visible dans phpMyAdmin peut rester vide, même après l’initialisation via DVWA.
 
 Ce comportement montre l’importance de bien configurer et vérifier les variables de connexion entre les services dans une architecture Docker.
+
+
+<img width="1536" height="1024" alt="SchémaTP_docker" src="https://github.com/user-attachments/assets/ce853a18-c3b3-447d-ab91-c8557765f07b" />
+
