@@ -47,3 +47,17 @@ Non, Docker ne protège pas contre les vulnérabilités applicatives.
 Docker isole les services et sécurise l’infrastructure, mais ne corrige pas les failles dans le code.
 Une application vulnérable reste exploitable même dans un conteneur Docker.
 
+
+## Bonus
+
+### phpMyAdmin
+
+phpMyAdmin permet d’accéder au conteneur MySQL via le réseau Docker.  
+Dans ce lab, la base `dvwa` est visible depuis phpMyAdmin.
+
+Cependant, l’image `vulnerables/web-dvwa` démarre également un service MySQL/MariaDB interne, comme on peut le voir dans les logs (`Starting mysql`).  
+Cela signifie que DVWA peut utiliser sa propre base interne au lieu de celle du conteneur `db`.
+
+C’est pourquoi la base `dvwa` visible dans phpMyAdmin peut rester vide, même après l’initialisation via DVWA.
+
+Ce comportement montre l’importance de bien configurer et vérifier les variables de connexion entre les services dans une architecture Docker.
