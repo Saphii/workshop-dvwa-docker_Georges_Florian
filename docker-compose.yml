@@ -1,0 +1,24 @@
+services:
+  db:
+    image: mysql:5.7
+    container_name: dvwa-db
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: dvwa
+      MYSQL_USER: dvwa
+      MYSQL_PASSWORD: dvwa
+    expose:
+      - "3306"
+
+  dvwa:
+    image: vulnerables/web-dvwa
+    container_name: dvwa-app
+    depends_on:
+      - db
+    ports:
+      - "8081:80"
+    environment:
+      MYSQL_HOST: db
+      MYSQL_DATABASE: dvwa
+      MYSQL_USER: dvwa
+      MYSQL_PASSWORD: dvwa

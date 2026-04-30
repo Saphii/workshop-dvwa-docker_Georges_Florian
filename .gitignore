@@ -1,0 +1,9 @@
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.env
+*.env
+*.log
+docker-compose.override.yml
+mysql-data/
